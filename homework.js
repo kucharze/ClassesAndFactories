@@ -28,4 +28,43 @@ class Person {
     this.hamsters = [];
     this.bankAccount = 0;
   }
+
+  getName() {
+    return this.name;
+  }
+
+  getAge() {
+    return this.age;
+  }
+
+  getWeight() {
+    return this.weight;
+  }
+
+  greet() {
+    console.log(`${this.name} says hello`);
+  }
+
+  eat() {
+    this.weight++;
+    this.mood++;
+  }
+
+  exercise() {
+    this.weight--;
+  }
+
+  ageUp() {
+    this.age++;
+    this.height++;
+    this.weight++;
+    this.mood--;
+    this.bankAccount += 10;
+  }
+
+  buyHamster(hamster) {
+    this.hamsters.push(hamster);
+    this.mood += 10;
+    this.bankAccount -= hamster.getPrice();
+  }
 }
