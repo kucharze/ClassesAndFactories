@@ -1,8 +1,8 @@
 class Hamster {
-  constructor(owner, name, price) {
-    this.owner = owner;
+  constructor(name) {
+    this.owner = "";
     this.name = name;
-    this.price = price;
+    this.price = 15;
   }
 
   wheelRun() {
@@ -16,4 +16,8 @@ class Hamster {
   getPrice() {
     return this.price;
   }
+}
+
+class Person {
+  constructor(name, age, height, weight, mood, hamsters, bankAccount) {}
 }
