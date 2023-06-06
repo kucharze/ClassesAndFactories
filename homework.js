@@ -112,3 +112,25 @@ for (let i = 0; i < 2; i++) {
   timmy.exercise();
 }
 console.log(timmy);
+
+class Dinner {
+  constructor(appetizer, entree, desert) {
+    this.appetizer = appetizer;
+    this.entree = entree;
+    this.desert = desert;
+  }
+}
+
+class Chef {
+  makeDinner(appetizer, entree, desert) {
+    return new Dinner(appetizer, entree, desert);
+  }
+}
+
+let cook = new Chef();
+
+console.log(cook.makeDinner("chips", "steak", "ice cream"));
+
+console.log(cook.makeDinner("cactus blossum", "road kill", "Chocolate cake"));
+
+console.log(cook.makeDinner("chips", "steak", "ice cream"));
