@@ -133,4 +133,4 @@ console.log(cook.makeDinner("chips", "steak", "ice cream"));
 
 console.log(cook.makeDinner("cactus blossum", "road kill", "Chocolate cake"));
 
-console.log(cook.makeDinner("chips", "steak", "ice cream"));
+console.log(cook.makeDinner("Cheese Fries", "steak", "ice cream"));
